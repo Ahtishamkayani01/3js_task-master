@@ -167,7 +167,7 @@
 			stats = new Stats();
 			stats.dom.style.width = '80px';
 			stats.dom.style.height = '48px';
-			document.body.appendChild(stats.dom);
+			// document.body.appendChild(stats.dom);
 
 			statsMesh = new HTMLMesh(stats.dom);
 			statsMesh.position.x = - 0.75;
@@ -202,10 +202,10 @@
 			torus.rotation.y = time * 5;
 
 			renderer.render(scene, camera);
-			stats.update();
+			// stats.update();
 
 			// Canvas elements doesn't trigger DOM updates, so we have to update the texture
-			statsMesh.material.map.update();
+			// statsMesh.material.map.update();
 
 		}
 
